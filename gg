@@ -1,29 +1,70 @@
-<div class="form-check-inline">
-                              <label class="form-check-label">
-                              <input type="radio" class="form-check-input" name="">1
-                        </label>
-                        </div>
-                        <div class="form-check-inline">
-                        <label class="form-check-label">
-                               <input type="radio" class="form-check-input" name="">2
-                        </label>
-                        </div>
-                        <div class="form-check-inline">
-                        <label class="form-check-label">
-                               <input type="radio" class="form-check-input" name="">3
-                        </label>
-                        </div>
-                        <div class="form-check-inline">  
-                        <label class="form-check-label">
-                               <input type="radio" class="form-check-input" name="">4
-                        </label>
-                        </div>
-                        <div class="form-check-inline">
-                        <label class="form-check-label">
-                               <input type="radio" class="form-check-input" name="">5
-                       </label>
-                       </div>
-                       <div class="form-check-inline">
-                       <label class="form-check-label">
-                              <input type="radio" class="form-check-input" name="" >6
-                       </label>
+<div id="reserve" class="row row-content justify-content-center align-items-center col-lg-8 col-10">
+        <div >
+            <div class="card">
+                <h3 class="card-header bg-warning text-white">Reserve a Table</h3>
+                <div class="card-body">
+                    <form>
+                        <div class="form-group row">
+                            <label for="numberofguests" class="col-md-2 col-form-label">Number of Guests</label>
+                            <div class="form-check form-check-inline ml-3">
+                                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                                <label class="form-check-label" for="inlineRadio1">1</label>
+                              </div>
+                              <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                                <label class="form-check-label" for="inlineRadio2">2</label>
+                              </div>
+                              <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3">
+                                <label class="form-check-label" for="inlineRadio3">3</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                 <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio4" value="option4">
+                                 <label class="form-check-label" for="inlineRadio4">4</label>
+                                  </div>
+                                <div class="form-check form-check-inline">
+                                 <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio5" value="option5">
+                                 <label class="form-check-label" for="inlineRadio5">5</label>
+                                 </div>
+                                <div class="form-check form-check-inline">
+                                 <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio6" value="option6">
+                                 <label class="form-check-label" for="inlineRadio6">6</label>
+                                  </div>
+                              </div>
+                              <div class="form-group row">
+                                  <label for="section" class="col-sm-2 col-form-label">Section</label>
+                              <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                                <label class="btn btn-success ml-3">
+                                  <input type="radio" name="non-smoking" id="non-smoking" autocomplete="off" checked> Non-Smoking
+                                </label>
+                                <label class="btn btn-danger">
+                                  <input type="radio" name="smoking" id="smoking" autocomplete="off"> Smoking
+                                </label>
+                               </div>
+                              </div>
+                              <div class="form-group row">
+                                <label for="dateandtime" class="col-sm-2 col-form-label">Date and Time</label>
+                                <div class="col-10 col-md-4">
+                                    <input type="text" class="form-control" id="date" name="date" placeholder="Date">
+                                </div>
+                                <div class="col-10 col-md-4">
+                                    <input type="text" class="form-control" id="time" name="time" placeholder="Time">
+                                </div>  
+                              </div>
+                            <div class="form-group row">
+                                <div class="offset-md-2 col-md-10">
+                                    <button type="button" class="btn btn-secondary ml-auto" data-dismiss="modal">Cancel</button>
+                                    <button type="submit" class="btn btn-primary">Reserve</button>
+                                </div>
+                            </div>  
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+            <script>
+            $(function () {
+  $('[data-toggle="popover"]').popover()
+})
+        </script>
